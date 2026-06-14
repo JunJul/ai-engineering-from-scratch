@@ -57,7 +57,8 @@ We use `uv` — it's 10-100x faster than pip and handles virtual environments au
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" (powershell)
+# powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 uv python install 3.12
 
