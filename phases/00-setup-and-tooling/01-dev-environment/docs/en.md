@@ -63,6 +63,8 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 uv python install 3.12
 
 uv venv
+# run this first if you encounter issue when run .venv\Scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
 uv pip install numpy matplotlib jupyter
