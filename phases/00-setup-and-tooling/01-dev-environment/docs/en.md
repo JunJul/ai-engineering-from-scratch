@@ -88,7 +88,9 @@ For TypeScript lessons (agents, MCP servers, web apps).
 
 ```bash
 curl -fsSL https://fnm.vercel.app/install | bash
+# If you cannot execute the link above, try enter this link https://github.com/Schniz/fnm/releases/latest/download/fnm-windows.zip, then download and drag it to your user directory
 fnm install 22
+@FOR /f "tokens=*" %i IN ('fnm env --use-on-cd') DO @%i
 fnm use 22
 
 npm install -g pnpm
@@ -102,6 +104,7 @@ For performance-critical lessons (inference, systems).
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# Download from scratch https://rustup.rs/ and procceed with 1) then enter
 
 rustc --version
 cargo --version
@@ -113,8 +116,9 @@ For math-heavy lessons where Julia shines.
 
 ```bash
 curl -fsSL https://install.julialang.org | sh
+# Donwalod from scratch https://julialang.org/downloads/manual-downloads/
 
-julia -e 'println("Julia ", VERSION)'
+julia -e "println(\"Julia \", VERSION)"
 ```
 
 ### Step 6: GPU Setup (If You Have One)
